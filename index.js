@@ -756,20 +756,20 @@ notice like this when it starts in an interactive mode:
 
     <${res.title}>  Copyright (C) <2021>  <${res.username}>`
 
-  fs.writeFile('READMEtest.md', body, err => {
+  fs.writeFile('README.md', body, err => {
     if (err) {console.log(err)}
   })
 
   if (res.license === 'MIT') {
-    fs.appendFile('READMEtest.md', mitLicense , err => {
+    fs.appendFile('README.md', mitLicense , err => {
       if (err) {console.log(err)}
     })
   } else if (res.license === 'GNU GPL') {
-    fs.appendFile('READMEtest.md', gnuLicense , err => {
+    fs.appendFile('README.md', gnuLicense , err => {
       if (err) { console.log(err) }
     })
   } else {
-    fs.appendFile('READMEtest.md', "This is a community license" , err => {
+    fs.appendFile('README.md', "This is a community license" , err => {
       if (err) { console.log(err) }
     })
   }
